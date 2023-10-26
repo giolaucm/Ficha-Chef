@@ -14,8 +14,8 @@ class Home : AppCompatActivity() {
 
         window.statusBarColor = Color.parseColor("#000000")
 
-        val btnCadastrar = findViewById<MaterialButton>(R.id.btn_entrar)
-        btnCadastrar.setOnClickListener {
+        val btnEntrar = findViewById<MaterialButton>(R.id.btn_entrar)
+        btnEntrar.setOnClickListener {
             val intent = Intent(this, Inicial::class.java)
             startActivity(intent)
         }

@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         window.statusBarColor = Color.parseColor("#FFFFFF")
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, Home::class.java)
+            val intent = Intent(this, Apresentacao::class.java)
             startActivity(intent)
             finish()
-        },3000)
+        },5000)
     }
 }

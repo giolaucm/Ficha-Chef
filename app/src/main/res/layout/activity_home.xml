@@ -45,7 +45,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="610dp"
         android:orientation="vertical"
         android:padding="28dp">
 
@@ -57,6 +57,7 @@
             android:layout_height="wrap_content"
             android:text="E-mail ou Usuário"
             android:alpha="0.7"
+            android:layout_marginStart="3dp"
             android:textStyle="bold"/>
 
         <EditText
@@ -72,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Senha"
+            android:layout_marginStart="5dp"
             android:alpha="0.7"
             android:textStyle="bold"/>
 
