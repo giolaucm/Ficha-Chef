@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "419083265959",
+    "firebase_url": "https://tcc-fichachef-default-rtdb.firebaseio.com",
+    "project_id": "tcc-fichachef",
+    "storage_bucket": "tcc-fichachef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419083265959:android:28a19dd6b3e20f59de7882",
+        "android_client_info": {
+          "package_name": "com.FichaChef.kd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419083265959-0hbnvlqmjctajho68287eqmdq033hhpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOj0T41G8kuYRh6MNJwobDvKG3g1QOO4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419083265959-0hbnvlqmjctajho68287eqmdq033hhpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419083265959:android:ae6de331c6f194aade7882",
+        "android_client_info": {
+          "package_name": "com.example.fichachefapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419083265959-0hbnvlqmjctajho68287eqmdq033hhpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOj0T41G8kuYRh6MNJwobDvKG3g1QOO4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419083265959-0hbnvlqmjctajho68287eqmdq033hhpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
