@@ -3,4 +3,5 @@
     <string name="entrar">Entrar</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="bemVindos">Bem-vindo(a) ao melhor app para a precificação de seus produtos. Descubra como gerenciar suas vendas e novas receitas.</string>
+    <string name="verificarEmail">Por favor, informe o E-mail associado a sua conta que enviaremos o link de restauração da senha.</string>
 </resources>

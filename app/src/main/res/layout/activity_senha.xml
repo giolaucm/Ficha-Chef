@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Senha"
+    android:background="@drawable/codigo">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="30dp"
+        app:srcCompat="@drawable/seta" />
+
+    <TextView
+        android:id="@+id/insira_o_c_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:text="Insira o código"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="O código foi enviado para o seu e-mail, verifique sua caixa de correio." />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        >
+
+        <EditText
+            android:id="@+id/editTextNumber1"
+            android:layout_width="61dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/senha"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="61dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/senha"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="61dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/senha"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="61dp"
+            android:layout_height="75dp"
+            android:background="@drawable/senha"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/corPrimaria"
+                android:text="Confirmar"
+                app:cornerRadius="32dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/corPrimaria"
+                android:text="Reenviar código"
+                android:background="@android:color/transparent"
+                app:cornerRadius="32dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
