@@ -1,0 +1,45 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FichaFinal">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custo Total"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/custoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custo por Unidade"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/custoPorUnidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

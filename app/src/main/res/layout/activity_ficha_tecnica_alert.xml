@@ -8,11 +8,11 @@
     android:orientation="vertical"
     android:background="@drawable/codigo">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_margin="30dp"
+    <ImageButton
+        android:id="@+id/set_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         app:srcCompat="@drawable/seta" />
 
     <LinearLayout
@@ -85,7 +85,7 @@
             android:layout_width="180dp"
             android:layout_height="60dp"
             android:background="@android:color/transparent"
-            android:text="Reenviar código"
+            android:text="@string/novamente"
             android:textColor="@color/corPrimaria"
             app:cornerRadius="32dp" />
 
@@ -94,7 +94,7 @@
             android:layout_width="180dp"
             android:layout_height="60dp"
             android:backgroundTint="@color/corPrimaria"
-            android:text="Confirmar"
+            android:text="Iniciar"
             app:cornerRadius="32dp"/>
     </LinearLayout>
 </LinearLayout>

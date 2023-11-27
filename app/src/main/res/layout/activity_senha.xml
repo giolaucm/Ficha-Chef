@@ -98,7 +98,7 @@
             android:gravity="center">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_cadastrar"
+                android:id="@+id/btn_confirmarSenha"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:backgroundTint="@color/corPrimaria"
@@ -106,7 +106,7 @@
                 app:cornerRadius="32dp"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_cadastrar"
+                android:id="@+id/btn_reenviarCodigo"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:textColor="@color/corPrimaria"

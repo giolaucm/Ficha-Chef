@@ -4,4 +4,20 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="bemVindos">Bem-vindo(a) ao melhor app para a precificação de seus produtos. Descubra como gerenciar suas vendas e novas receitas.</string>
     <string name="verificarEmail">Por favor, informe o E-mail associado a sua conta que enviaremos o link de restauração da senha.</string>
+    <string name="title_activity_ficha_tecnica_ingredientes">FichaTecnicaIngredientes</string>
+    <string name="Adicionar">Adicionar ingrediente</string>
+    <string name="Gasto">Preço</string>
+    <string name="quantidadeUsada">Quantidade Usada</string>
+    <string name="searchbar_hint">Pesquisar</string>
+    <string name="text_label_2">perfil\n</string>
+    <string name="text_label_1">estoque\n</string>
+    <string name="unidMed">Qtd</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="novamente">Não aparecer novamente</string>
+
+    <string-array name="unidades_medida">
+        <item>kg</item>
+        <item>g</item>
+        <item>ml</item>
+    </string-array>
 </resources>

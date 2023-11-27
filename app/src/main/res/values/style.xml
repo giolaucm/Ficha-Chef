@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Material3.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+        <item name="boxStrokeColor">@color/m3_textfield_stroke_color</item>
+        <item name="boxStrokeErrorColor">@macro/m3_comp_outlined_text_field_error_outline_color</item>
+        <!-- Adicione outros itens conforme necessário -->
+    </style>
+
+    <style name="Widget.Material3.TextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+        <item name="boxStrokeColor">@color/m3_textfield_stroke_color</item>
+        <item name="boxStrokeErrorColor">@macro/m3_comp_filled_text_field_error_active_indicator_color</item>
+        <item name="boxBackgroundColor">@color/m3_textfield_filled_background_color</item>
+        <!-- Adicione outros itens conforme necessário -->
+    </style>
+
+    <!-- Adicione estilos para dropdown menus, se necessário -->
+    <style name="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+    </style>
+
+    <style name="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+    </style>
+
+    <!-- Adicione estilos para TextInputEditText, se necessário -->
+    <style name="Widget.Material3.TextInputEditText.OutlinedBox" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+    </style>
+
+    <style name="Widget.Material3.TextInputEditText.FilledBox" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+    </style>
+
+    <style name="Widget.Material3.AutoCompleteTextView.OutlinedBox" parent="Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+    </style>
+
+    <style name="Widget.Material3.AutoCompleteTextView.FilledBox" parent="Widget.MaterialComponents.AutoCompleteTextView.FilledBox">
+        <!-- Adicione os itens relevantes que você precisa aqui -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.RoundButton" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="RoundedShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item> <!-- Adjust the corner size as needed -->
+    </style>
+
+
+</resources>
