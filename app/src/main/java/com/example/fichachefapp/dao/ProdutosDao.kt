@@ -26,11 +26,11 @@ class ProdutosDao {
     }
 
     fun somaPrecoLiquido(): BigDecimal {
-        return produtos.sumOf { it.precoLiquido }
+        return BigDecimal(produtos.sumByDouble { it.precoLiquido.toDouble() })
     }
 
     fun somaPrecoBruto(): BigDecimal {
-        return produtos.sumOf { it.precoBruto }
+        return BigDecimal(produtos.sumByDouble { it.PrecoBruto.toDouble() })
     }
 
     companion object {

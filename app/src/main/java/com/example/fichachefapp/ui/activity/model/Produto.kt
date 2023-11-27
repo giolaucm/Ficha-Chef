@@ -2,24 +2,21 @@ import java.math.BigDecimal
 
 data class Produto(
     val nome: String,
-    val quantidade: BigDecimal,
-    val unidadeMedida: String,
+    val PrecoBruto: BigDecimal,
+    val unidMedida: String,
     val valorUnitario: BigDecimal,
     val margemLucro: BigDecimal,
     val desconto: BigDecimal
 ) {
-    val precoBruto: BigDecimal
-        get() = quantidade.multiply(valorUnitario)
-
     val precoLiquido: BigDecimal
-        get() = precoBruto.subtract(precoBruto.multiply(desconto))
+        get() = PrecoBruto.subtract(PrecoBruto.multiply(desconto))
 
     val precoVenda: BigDecimal
-        get() = precoBruto.multiply(margemLucro)
+        get() = PrecoBruto.multiply(margemLucro)
 
     companion object {
         fun custoTotal(produtos: List<Produto>): BigDecimal {
-            return produtos.sumOf { it.precoBruto }
+            return produtos.sumOf { it.PrecoBruto }
         }
     }
 }

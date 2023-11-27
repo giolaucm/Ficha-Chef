@@ -1,5 +1,6 @@
 package com.example.fichachefapp.ui.activity
 
+import Produto
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +12,6 @@ import com.example.fichachefapp.Formulario
 import com.example.fichachefapp.R
 import com.example.fichachefapp.dao.ProdutosDao
 import com.example.fichachefapp.databinding.ActivityIngredientesBinding
-import com.example.fichachefapp.ui.activity.model.Produto
 import com.example.fichachefapp.ui.recyclerview.adapter.ListaProdutosAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 

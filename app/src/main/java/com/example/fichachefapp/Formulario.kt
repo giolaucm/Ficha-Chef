@@ -36,7 +36,7 @@ class Formulario : AppCompatActivity(R.layout.activity_formulario) {
         val editText = findViewById<AutoCompleteTextView>(R.id.unidMedBruto)
         editText.setAdapter(adapter)
 
-        val campoQuantidade = findViewById<EditText>(R.id.precoBruto) // Corrigido aqui
+        val campoQuantidade = findViewById<EditText>(R.id.precoBruto)
         campoQuantidade.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable) {
                 val unidade = editText.text.toString()
@@ -47,15 +47,12 @@ class Formulario : AppCompatActivity(R.layout.activity_formulario) {
                     "ml" -> valor
                     else -> valor
                 }
-                // Atualize o valor do campo ou faça o que precisar com o valor ajustado
             }
 
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
-                // Não é necessário fazer nada aqui
             }
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                // Não é necessário fazer nada aqui
             }
         })
     }
@@ -64,24 +61,25 @@ class Formulario : AppCompatActivity(R.layout.activity_formulario) {
         val campoNome = findViewById<EditText>(R.id.nome)
         val nome = campoNome.text.toString()
 
-        val campoQuantidade = findViewById<EditText>(R.id.precoBruto)
-        val quantidade = campoQuantidade.text.toString()
+        val campoPrecoBruto = findViewById<EditText>(R.id.precoBruto)
+        val precoBruto = BigDecimal(campoPrecoBruto.text.toString())
+
+        val campoUnidadeMedida = findViewById<AutoCompleteTextView>(R.id.unidMedBruto)
+        val unidadeMedida = campoUnidadeMedida.text.toString()
 
         val campoValorUnitario = findViewById<EditText>(R.id.precoLiquido)
-        val valorEmTexto = campoValorUnitario.text.toString()
-        val valorUnitario = if (valorEmTexto.isBlank()) {
-            BigDecimal.ZERO
-        } else {
-            BigDecimal(valorEmTexto)
-        }
+        val valorUnitario = BigDecimal(campoValorUnitario.text.toString())
+
+        val margemLucro = BigDecimal.ZERO
+        val desconto = BigDecimal.ZERO
+
         return Produto(
             nome = nome,
-            quantidade = quantidade.toBigDecimal(),
-            valorUnitario = valorUnitario.toBigDecimal()
+            PrecoBruto = precoBruto,
+            unidMedida = unidadeMedida,
+            valorUnitario = valorUnitario,
+            margemLucro = margemLucro,
+            desconto = desconto
         )
-    }
-
-    private fun Produto(nome: String, quantidade: BigDecimal, valorUnitario: BigDecimal): Produto {
-
     }
 }

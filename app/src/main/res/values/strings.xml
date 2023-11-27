@@ -14,6 +14,8 @@
     <string name="unidMed">Qtd</string>
     <string name="ingredientes">Ingredientes</string>
     <string name="novamente">Não aparecer novamente</string>
+    <string name="rascunho">Rascunho</string>
+    <string name="fichaChef">Ficha Chef</string>
 
     <string-array name="unidades_medida">
         <item>kg</item>

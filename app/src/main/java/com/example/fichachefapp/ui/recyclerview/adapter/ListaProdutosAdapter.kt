@@ -1,5 +1,6 @@
 package com.example.fichachefapp.ui.recyclerview.adapter
 
+import Produto
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fichachefapp.R
-import com.example.fichachefapp.ui.activity.model.Produto
 
 class ListaProdutosAdapter(
     private val context: Context,
@@ -22,8 +22,8 @@ class ListaProdutosAdapter(
             val nome = itemView.findViewById<TextView>(R.id.nome)
             nome.text = produto.nome
 
-            val quantidade = itemView.findViewById<TextView>(R.id.precoBruto)
-            quantidade.text = produto.quantidade.toString()
+            val precoBruto = itemView.findViewById<TextView>(R.id.precoBruto)
+            precoBruto.text = produto.PrecoBruto.toString()
 
             val valorUnitario = itemView.findViewById<TextView>(R.id.precoLiquido)
             valorUnitario.text = produto.valorUnitario.toPlainString()

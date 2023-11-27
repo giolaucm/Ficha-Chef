@@ -7,23 +7,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/toolBar"
-        android:elevation="4dp"
-        app:titleTextColor="@color/black">
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:menu="@menu/top_bar"
+                app:navigationIcon="@drawable/arrow"
+        </com.google.android.material.appbar.AppBarLayout>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/ingredientes"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
-    </androidx.appcompat.widget.Toolbar>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -39,63 +42,21 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="24dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:orientation="horizontal"
-                android:padding="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:orientation="vertical"
+                >
 
-                <!-- First TextInputLayout with larger EditText -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/precoBrutoLayout"
-                    style="var"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:boxStrokeColor="@color/corPrimaria">
-
-                    <EditText
-                        android:id="@+id/precoBruto"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/Gasto"
-                        android:inputType="numberDecimal" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!-- Second TextInputLayout with a list in the EditText -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/unidMedLayout"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    app:boxStrokeColor="@color/corPrimaria">
-
-                    <AutoCompleteTextView
-                        android:id="@+id/unidMedBruto"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/unidMed"
-                        android:inputType="textAutoComplete" />
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="164dp"
+                android:layout_marginTop="264dp"
                 android:layout_marginEnd="24dp"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="horizontal"
                 android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -142,11 +103,11 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
                 android:padding="8dp"
+                app:boxStrokeColor="@color/corPrimaria"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:boxStrokeColor="@color/corPrimaria">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
                     android:id="@+id/nome"
@@ -163,11 +124,93 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="@string/Adicionar"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintVertical_bias="1" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="333dp">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="86dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/precoBrutoLayout"
+                    style="var"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:padding="8dp"
+                    app:boxStrokeColor="@color/corPrimaria"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/precoBruto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Preço bruto"
+                        android:inputType="numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <!-- First TextInputLayout with larger EditText -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/qtdPrecoBrutoLayout"
+                        style="var"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:boxStrokeColor="@color/corPrimaria">
+
+                        <EditText
+                            android:id="@+id/qtdPrecoBruto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Quantidade"
+                            android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/unidMedLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        app:boxStrokeColor="@color/corPrimaria">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/unidMedBruto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/unidMed"
+                            android:inputType="textAutoComplete" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-    </LinearLayout>
+</LinearLayout>
