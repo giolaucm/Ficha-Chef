@@ -41,7 +41,7 @@ class Cadastro : AppCompatActivity() {
 
                     firebaseAuth.createUserWithEmailAndPassword(email , criarSenha).addOnCompleteListener {
                         if (it.isSuccessful){
-                            val intent = Intent(this, Entrar::class.java)
+                            val intent = Intent(this, Slider::class.java)
                             startActivity(intent)
                         }else{
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

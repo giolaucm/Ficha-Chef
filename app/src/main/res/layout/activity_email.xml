@@ -48,37 +48,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_margin="16dp">
 
-            <LinearLayout
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/caixaEmailLayout"
+                style="var"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:alpha="0.7"
-                    android:gravity="start"
-                    android:text="E-mail ou Usuário"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <EditText
-                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/baseline_email_24"
-                android:inputType="textEmailAddress" />
+                android:padding="8dp"
+                app:boxStrokeColor="@color/corPrimaria"
+                app:hintTextColor="@color/corPrimaria"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="16dp">
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="8dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/caixa_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/baseline_email_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:textCursorDrawable="@color/corPrimaria" />
+            </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnEntrar"
-            android:layout_width="180dp"
+            android:id="@+id/btnEnviarEmail"
+            android:layout_width="165dp"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/corPrimaria"

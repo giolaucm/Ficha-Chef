@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class Splash : AppCompatActivity(R.layout.activity_splash) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

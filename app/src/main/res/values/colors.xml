@@ -3,5 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="corPrimaria">#DF2E38</color>
+    <color name="corPrimariaClara">#E1858A</color>
     <color name="toolBar">#F3EAEB</color>
 </resources>
