@@ -26,7 +26,7 @@ class ProdutosDao {
     }
 
     fun somaPrecoLiquido(): BigDecimal {
-        return BigDecimal(produtos.sumByDouble { it.precoLiquido.toDouble() })
+        return BigDecimal(produtos.sumByDouble { it.PrecoLiquido.toDouble() })
     }
 
     fun somaPrecoBruto(): BigDecimal {

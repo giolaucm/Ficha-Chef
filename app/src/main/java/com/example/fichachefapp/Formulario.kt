@@ -13,9 +13,11 @@ import com.example.fichachefapp.dao.ProdutosDao
 import java.math.BigDecimal
 
 class Formulario : AppCompatActivity(R.layout.activity_formulario) {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         configuraSalvar()
         configuraUnidadesMedida()
     }
@@ -67,8 +69,8 @@ class Formulario : AppCompatActivity(R.layout.activity_formulario) {
         val campoUnidadeMedida = findViewById<AutoCompleteTextView>(R.id.unidMedBruto)
         val unidadeMedida = campoUnidadeMedida.text.toString()
 
-        val campoValorUnitario = findViewById<EditText>(R.id.precoLiquido)
-        val valorUnitario = BigDecimal(campoValorUnitario.text.toString())
+        val campoPrecoLiquido = findViewById<EditText>(R.id.qtdLiquido)
+        val PrecoLiquido = BigDecimal(campoPrecoLiquido.text.toString())
 
         val margemLucro = BigDecimal.ZERO
         val desconto = BigDecimal.ZERO
@@ -77,7 +79,7 @@ class Formulario : AppCompatActivity(R.layout.activity_formulario) {
             nome = nome,
             PrecoBruto = precoBruto,
             unidMedida = unidadeMedida,
-            valorUnitario = valorUnitario,
+            PrecoLiquido = PrecoLiquido,
             margemLucro = margemLucro,
             desconto = desconto
         )

@@ -12,18 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FichaChefApp"
         tools:targetApi="31">
+
         <activity
             android:name=".FichaFinal"
             android:exported="false" />
         <activity
             android:name=".ui.activity.Ingredientes"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -40,14 +36,23 @@
             android:name=".Senha"
             android:exported="false" />
         <activity
-            android:name=".Inicial"
+            android:name=".Principal"
             android:exported="false" />
         <activity
             android:name=".Cadastro"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
-            android:name=".Home"
+            android:name=".Entrar"
             android:exported="false" />
+
+        <activity android:name=".Inicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

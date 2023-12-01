@@ -1,45 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Entrar"
-    android:background="@color/black">
+    android:background="@color/corPrimaria">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@drawable/background"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="28dp">
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="28dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cadastrar"
-            android:textColor="@color/white"
-            android:textSize="30sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="10dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
 
-        <TextView
-            android:id="@+id/irEntrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Já possui conta? | Entrar"
-            android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/irEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não possui conta? | Cadastrar"
+        android:textColor="@color/white" />
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="10dp" />
-    </LinearLayout>
-
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+</LinearLayout>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,29 +56,6 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/caixaUserLayout"
-                    style="var"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    app:boxStrokeColor="@color/corPrimaria"
-                    app:hintTextColor="@color/corPrimaria"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/caixa_user"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableEnd="@drawable/baseline_person_24"
-                        android:drawablePadding="8dp"
-                        android:hint="Nome de Usuário"
-                        android:inputType="text"
-                        android:textCursorDrawable="@color/corPrimaria" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/caixaEmailLayout"
                     style="var"
                     android:layout_width="match_parent"
@@ -89,8 +64,9 @@
                     app:boxStrokeColor="@color/corPrimaria"
                     app:hintTextColor="@color/corPrimaria"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/caixaUserLayout">
+                    tools:layout_editor_absoluteY="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/caixa_email"
@@ -127,31 +103,6 @@
                         android:textCursorDrawable="@color/corPrimaria" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/caixaVerificarSenhaLayout"
-                    style="var"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    app:boxStrokeColor="@color/corPrimaria"
-                    app:endIconMode="password_toggle"
-                    app:hintTextColor="@color/corPrimaria"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/caixaCriarSenhaLayout">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/caixa_verificar_senha"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableEnd="@drawable/baseline_email_24"
-                        android:drawablePadding="8dp"
-                        android:hint="Senha"
-                        android:inputType="textPassword"
-                        android:textCursorDrawable="@color/corPrimaria" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -184,7 +135,7 @@
                 android:layout_height="10dp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnCadastrar"
+                android:id="@+id/btnEntrar"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:backgroundTint="@color/corPrimaria"
@@ -221,5 +172,4 @@
 
             </LinearLayout>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</LinearLayout>
+    </androidx.cardview.widget.CardView></LinearLayout>

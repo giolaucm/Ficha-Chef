@@ -16,6 +16,7 @@
     <string name="novamente">Não aparecer novamente</string>
     <string name="rascunho">Rascunho</string>
     <string name="fichaChef">Ficha Chef</string>
+    <string name="default_web_client_id">1:419083265959:android:ae6de331c6f194aade7882\n</string>
 
     <string-array name="unidades_medida">
         <item>kg</item>

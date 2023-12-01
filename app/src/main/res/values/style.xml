@@ -2,16 +2,16 @@
 <resources>
     <style name="Widget.Material3.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <!-- Adicione os itens relevantes que você precisa aqui -->
-        <item name="boxStrokeColor">@color/m3_textfield_stroke_color</item>
+        <item name="boxStrokeColor">@color/corPrimaria</item>
         <item name="boxStrokeErrorColor">@macro/m3_comp_outlined_text_field_error_outline_color</item>
         <!-- Adicione outros itens conforme necessário -->
     </style>
 
     <style name="Widget.Material3.TextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <!-- Adicione os itens relevantes que você precisa aqui -->
-        <item name="boxStrokeColor">@color/m3_textfield_stroke_color</item>
+        <item name="boxStrokeColor">@color/corPrimaria</item>
         <item name="boxStrokeErrorColor">@macro/m3_comp_filled_text_field_error_active_indicator_color</item>
-        <item name="boxBackgroundColor">@color/m3_textfield_filled_background_color</item>
+        <item name="boxBackgroundColor">@color/corPrimaria</item>
         <!-- Adicione outros itens conforme necessário -->
     </style>
 

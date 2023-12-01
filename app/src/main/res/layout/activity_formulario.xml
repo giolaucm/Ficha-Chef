@@ -1,155 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBarLayout2"
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/topAppBar"
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="?attr/actionBarSize"
-                app:menu="@menu/top_bar"
-                app:navigationIcon="@drawable/arrow"
-        </com.google.android.material.appbar.AppBarLayout>
+                android:layout_height="wrap_content">
 
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?attr/actionBarSize"
+                    app:menu="@menu/top_bar"
+                    app:navigationIcon="@drawable/arrow"/>
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </com.google.android.material.appbar.AppBarLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:context=".Formulario">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="264dp"
-                android:layout_marginEnd="24dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:orientation="horizontal"
-                android:padding="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <!-- First TextInputLayout with larger EditText -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/precoLiquidoLayout"
-                    style="var"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:boxStrokeColor="@color/corPrimaria">
-
-                    <EditText
-                        android:id="@+id/precoLiquido"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/Gasto"
-                        android:inputType="numberDecimal" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/liquidoLayout"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    app:boxStrokeColor="@color/corPrimaria">
-
-                    <AutoCompleteTextView
-                        android:id="@+id/unidMedLiquido"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/unidMed"
-                        android:inputType="textAutoComplete" />
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/nomeLayout"
-                style="var"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:padding="8dp"
-                app:boxStrokeColor="@color/corPrimaria"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <EditText
-                    android:id="@+id/nome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Nome do ingrediente"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <Button
-                android:id="@+id/btn_adicionar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="@string/Adicionar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintVertical_bias="1" />
-
-            <com.google.android.material.chip.ChipGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="95dp"
-                tools:layout_editor_absoluteY="333dp">
-
-            </com.google.android.material.chip.ChipGroup>
-
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="86dp">
+               >
+
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/precoBrutoLayout"
+                    android:id="@+id/nomeLayout"
                     style="var"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
+                    android:layout_marginTop="40dp"
                     android:layout_marginEnd="24dp"
                     android:padding="8dp"
                     app:boxStrokeColor="@color/corPrimaria"
@@ -159,25 +56,135 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <EditText
+                        android:id="@+id/nome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nome do ingrediente"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_adicionar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/Adicionar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="1" />
+
+
+                <LinearLayout
+                    android:id="@+id/expansionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="146dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nomeLayout">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:padding="8dp"
+                        android:text="PreçoBruto"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/corPrimaria"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/precoBrutoLayout"
+                        style="var"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:padding="8dp"
+                        app:boxStrokeColor="@color/corPrimaria"
+                        app:hintTextColor="@color/corPrimaria"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/precoBruto"
+                        android:textCursorDrawable="@color/corPrimaria"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Preço bruto"
-                        android:inputType="numberDecimal"/>
+                        android:inputType="numberDecimal"
+                        android:drawableStart="@drawable/money"
+                        android:drawablePadding="8dp"
+                    />
                 </com.google.android.material.textfield.TextInputLayout>
 
+
+    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <!-- First TextInputLayout with larger EditText -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/qtdPrecoBrutoLayout"
+                            style="var"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:boxStrokeColor="@color/corPrimaria">
+
+                            <EditText
+                                android:id="@+id/qtdPrecoBruto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Quantidade"
+                                android:inputType="numberDecimal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/unidMedLayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            app:boxStrokeColor="@color/corPrimaria">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/unidMedBruto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/unidMed"
+                                android:inputType="textAutoComplete" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
                 <LinearLayout
+                    android:id="@+id/precoLiquidoLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginEnd="24dp"
                     android:gravity="center_horizontal|center_vertical"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:padding="8dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="356dp"
+                    app:layout_constraintTop_toBottomOf="@+id/expansionLayout">
 
                     <!-- First TextInputLayout with larger EditText -->
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/qtdPrecoBrutoLayout"
+                        android:id="@+id/liquidoLayout"
                         style="var"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -185,15 +192,16 @@
                         app:boxStrokeColor="@color/corPrimaria">
 
                         <EditText
-                            android:id="@+id/qtdPrecoBruto"
+                            android:id="@+id/qtdLiquido"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Quantidade"
                             android:inputType="numberDecimal" />
+
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/unidMedLayout"
+                        android:id="@+id/liquidoLayout2"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -202,15 +210,14 @@
                         app:boxStrokeColor="@color/corPrimaria">
 
                         <AutoCompleteTextView
-                            android:id="@+id/unidMedBruto"
+                            android:id="@+id/unidMedLiquido2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/unidMed"
                             android:inputType="textAutoComplete" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-</LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>

@@ -4,13 +4,10 @@ data class Produto(
     val nome: String,
     val PrecoBruto: BigDecimal,
     val unidMedida: String,
-    val valorUnitario: BigDecimal,
+    val PrecoLiquido: BigDecimal,
     val margemLucro: BigDecimal,
     val desconto: BigDecimal
 ) {
-    val precoLiquido: BigDecimal
-        get() = PrecoBruto.subtract(PrecoBruto.multiply(desconto))
-
     val precoVenda: BigDecimal
         get() = PrecoBruto.multiply(margemLucro)
 

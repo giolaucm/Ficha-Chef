@@ -25,8 +25,8 @@ class ListaProdutosAdapter(
             val precoBruto = itemView.findViewById<TextView>(R.id.precoBruto)
             precoBruto.text = produto.PrecoBruto.toString()
 
-            val valorUnitario = itemView.findViewById<TextView>(R.id.precoLiquido)
-            valorUnitario.text = produto.valorUnitario.toPlainString()
+            val PrecoLiquido = itemView.findViewById<TextView>(R.id.precoLiquido)
+            PrecoLiquido.text = produto.PrecoLiquido.toPlainString()
         }
     }
 
