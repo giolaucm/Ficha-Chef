@@ -1,6 +1,7 @@
 package com.example.fichachefapp
 
 import Produto
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -10,6 +11,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fichachefapp.dao.ProdutosDao
+import com.example.fichachefapp.ui.activity.Ingredientes
 import java.math.BigDecimal
 
 class Formulario : AppCompatActivity(R.layout.activity_formulario) {
@@ -18,6 +20,16 @@ class Formulario : AppCompatActivity(R.layout.activity_formulario) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.topAppBar)
+        setSupportActionBar(toolbar)
+
+        toolbar.setNavigationOnClickListener {
+            val intent = Intent(this, Ingredientes::class.java)
+            startActivity(intent)
+            onBackPressed()
+        }
+
         configuraSalvar()
         configuraUnidadesMedida()
     }
@@ -45,8 +57,8 @@ class Formulario : AppCompatActivity(R.layout.activity_formulario) {
                 val valor = if (s.toString().isBlank()) 0.0 else s.toString().toDouble()
                 val valorAjustado = when (unidade) {
                     "kg" -> valor * 1000
-                    "g" -> valor
-                    "ml" -> valor
+                    "L" -> valor
+                    "Unidade" -> valor
                     else -> valor
                 }
             }

@@ -11,7 +11,7 @@
     <string name="searchbar_hint">Pesquisar</string>
     <string name="text_label_2">perfil\n</string>
     <string name="text_label_1">estoque\n</string>
-    <string name="unidMed">Qtd</string>
+    <string name="unidMed">Unidade de medida</string>
     <string name="ingredientes">Ingredientes</string>
     <string name="novamente">Não aparecer novamente</string>
     <string name="rascunho">Rascunho</string>
@@ -25,5 +25,5 @@
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="get_started">Get Started</string>
+    <string name="iniciar">Get Started</string>
 </resources>

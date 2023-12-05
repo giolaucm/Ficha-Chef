@@ -11,7 +11,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.example.fichachefapp.databinding.ActivityCadastroBinding
-
+import com.google.firebase.auth.UserProfileChangeRequest
 
 class Cadastro : AppCompatActivity() {
      private lateinit var binding: ActivityCadastroBinding
@@ -32,6 +32,7 @@ class Cadastro : AppCompatActivity() {
         }
 
         binding.btnCadastrar.setOnClickListener {
+            val usuario = binding.caixaUser.text.toString()
             val email = binding.caixaEmail.text.toString()
             val criarSenha = binding.caixaCriarSenha.text.toString()
             val verificarSenha = binding.caixaVerificarSenha.text.toString()
@@ -41,8 +42,20 @@ class Cadastro : AppCompatActivity() {
 
                     firebaseAuth.createUserWithEmailAndPassword(email , criarSenha).addOnCompleteListener {
                         if (it.isSuccessful){
-                            val intent = Intent(this, Slider::class.java)
-                            startActivity(intent)
+                            val user = firebaseAuth.currentUser
+
+                            // Create a request to add the username to the user profile
+                            val profileUpdates = UserProfileChangeRequest.Builder()
+                                .setDisplayName(usuario)
+                                .build()
+
+                            // Update the user profile
+                            user?.updateProfile(profileUpdates)?.addOnCompleteListener { task ->
+                                if (task.isSuccessful) {
+                                    val intent = Intent(this, Slider::class.java)
+                                    startActivity(intent)
+                                }
+                            }
                         }else{
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }

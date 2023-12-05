@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Slider"
-    android:background="@color/corPrimaria">
+    android:background="@drawable/background_conta">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onboardingViewPager"
@@ -68,7 +68,7 @@
         app:layout_constraintBottom_toTopOf="@id/buttonGetStarted"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/white" />
+        app:tint="@color/corPrimaria" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonGetStarted"
@@ -76,12 +76,13 @@
         android:layout_height="50dp"
         android:layout_marginBottom="50dp"
         android:paddingEnd="40dp"
-        android:text="@string/get_started"
+        android:text="@string/iniciar"
         android:textAllCaps="false"
         android:textSize="14sp"
         android:textStyle="bold"
         app:cornerRadius="20dp"
-        android:backgroundTint="@color/corPrimariaClara"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/corPrimaria"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

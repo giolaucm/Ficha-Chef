@@ -5,85 +5,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Email">
+    tools:context=".EmailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/cadeado" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="40dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Esqueceu sua senha?"
-            android:textSize="30sp" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/por_favor_i"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal|top"
-            android:text="@string/verificarEmail" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="50dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="16dp">
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/caixaEmailLayout"
-                style="var"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                app:boxStrokeColor="@color/corPrimaria"
-                app:hintTextColor="@color/corPrimaria"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="16dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/caixa_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/baseline_email_24"
-                    android:drawablePadding="8dp"
-                    android:hint="Email"
-                    android:inputType="text"
-                    android:textCursorDrawable="@color/corPrimaria" />
-            </com.google.android.material.textfield.TextInputLayout>
-
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/arrow"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/corPrimaria"
+                />
         </LinearLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnEnviarEmail"
-            android:layout_width="165dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/corPrimaria"
-            android:text="Enviar e-mail"
-            app:cornerRadius="32dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/cadeado" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esqueceu sua senha?"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/por_favor_i"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:text="@string/verificarEmail" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/caixaEmailLayout"
+                    style="var"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:boxStrokeColor="@color/corPrimaria"
+                    app:hintTextColor="@color/corPrimaria"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/caixa_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_email_24"
+                        android:drawablePadding="8dp"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:textCursorDrawable="@color/corPrimaria" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnviarEmail"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/corPrimaria"
+                android:text="Enviar e-mail"
+                app:cornerRadius="32dp" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

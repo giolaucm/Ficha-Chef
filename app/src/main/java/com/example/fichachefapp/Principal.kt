@@ -7,6 +7,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import androidx.fragment.app.Fragment
 import com.example.fichachefapp.databinding.ActivityPrincipalBinding
+import com.example.fichachefapp.fragments.bottom_sheets
 
 class Principal : AppCompatActivity() {
     private lateinit var binding: ActivityPrincipalBinding
@@ -21,8 +22,8 @@ class Principal : AppCompatActivity() {
 
         val btnCriarFicha = findViewById<FloatingActionButton>(R.id.floatingAdd)
         btnCriarFicha.setOnClickListener {
-            val intent = Intent(this, FichaTecnicaAlert::class.java)
-            startActivity(intent)
+            val bottomSheet = bottom_sheets()
+            bottomSheet.show(supportFragmentManager, "MyBottomSheetTag")
         }
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)

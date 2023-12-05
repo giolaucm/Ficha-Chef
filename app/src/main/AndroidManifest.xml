@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -13,34 +13,41 @@
         android:theme="@style/Theme.FichaChefApp"
         tools:targetApi="31">
         <activity
+            android:name=".Markup"
+            android:exported="false" />
+        <activity
+            android:name=".NomeReceita"
+           android:exported="false"/>
+        <activity
+            android:name=".FichaExplicacao"
+            android:exported="false" />
+        <activity
             android:name=".Slider"
-            android:exported="false"/>
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".FichaFinal"
             android:exported="false" />
         <activity
             android:name=".ui.activity.Ingredientes"
             android:exported="false" />
-
         <activity
             android:name=".Splash"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:exported="false" />
         <activity
             android:name=".Formulario"
             android:exported="false" />
         <activity
             android:name=".FichaTecnicaAlert"
-            android:exported="false" />
+            android:exported="false"/>
+
         <activity
-            android:name=".Email"
+            android:name="EmailActivity"
             android:exported="false" />
         <activity
             android:name=".Senha"
@@ -56,7 +63,7 @@
             android:exported="false" />
         <activity
             android:name=".Inicio"
-           android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>

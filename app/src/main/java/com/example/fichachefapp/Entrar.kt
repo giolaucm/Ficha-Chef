@@ -1,9 +1,11 @@
 package com.example.fichachefapp
 
+import EmailActivity
 import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import com.example.fichachefapp.databinding.ActivityEntrarBinding
 import com.google.firebase.auth.FirebaseAuth
