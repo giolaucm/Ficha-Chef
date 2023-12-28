@@ -1,16 +1,10 @@
-# fichachef
-Projeto de conclusão do curso técnico de desenvolvimento de sistemas.
+# FichaChef
+Projeto desenvolvido para o meu TCC, com sua criação temos como objetivo ajudar empreendedores da área de gastronomia a agilizar o processo de seus negócios, os ajudando com a precificação e gestão do seu negócio.
 
-Links
-<br>Vincular repositório do github ao Android Studio: https://www.youtube.com/watch?v=4KmPdeZj_ao
-<br>Criando um projeto no android studio: https://www.youtube.com/watch?v=haOiftiJkjs
-<br>Navegação de tela: https://www.youtube.com/watch?v=629qVxiWonM
-<br>Modelo de design login e cadastro: https://www.youtube.com/watch?v=04bzIg3Xuvg
-<br>Tela responsiva CSS: https://www.youtube.com/watch?v=GtsNZtzZiec&list=PLARhMvcrqcLy3bU1RxbkC7GYH7eHgXI0A
-<br>Firebase - Autenticação de login: https://www.youtube.com/watch?v=turCcT_bIVA
-<br>DESIGN MODEL: https://www.youtube.com/watch?v=ayKMfVt2Sg4
-<br>Verificação de código: https://www.youtube.com/watch?v=3AFGljftCzo
-<br>REcuperar senha: https://www.youtube.com/watch?v=50XweIg_-YU
-<br>Recuperar senha web: https://www.youtube.com/watch?v=Pp-3G-FChW0
-<br>Splash screen: https://www.youtube.com/watch?v=icmQOZp4p6I&t=8s
-<br>Material design: https://www.youtube.com/watch?v=V1TzoKc99rE
+O que oferecemos
+- Simulador: O empreendedor consegue simular conforme as quantidades de produtos a se vender quanto irá gastar e quanto irá lucrar.
+- Ficha Técnica automatizada: Realiza a precificação dos produtos de uma forma simplificada.
+- Estoque: Conforme a quantidade vendida é possível remover os ingredientes adicionados ao estoque.
+
+O que iremos fazer já que apps ou sites desse tipo possui muita evasão de usuários?
+- Parte que engaje os usuários
