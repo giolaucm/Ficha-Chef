@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('../img/background.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.logotipo {
+    height: 120px;
+    width: 120px;
+}
+
+header {
+    margin: 0 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    margin: 20px;
+}
+
+.header__ancora {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    margin: 20px;
+}
+
+#pg-inicial__apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+h1{
+    font-size: 4vw;
+    width: 900px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+#pg-inicial__apresentacao__subtitulo {
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center; /* Added property */
+
+}
+strong {
+    color:var(--color-secondary);
+}
+
+#pg-inicial__apresentacao__btn-espaco {
+    margin: 20px;
+}
+#btn-conhecer {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 12.5px 30px;
+    font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+#btn-conhecer:hover {
+    background-color: var(--color-primary);
+}
+
+#btn-download {
+    background-color: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12.5px 30px;
+    font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+#pg-inicial__conteudo{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin-top: 200px;
+
+
+}
+
+#aplicativo {
+    margin: 20px;
+}
+
+#conhecer {
+    color: var(--color-primary);
+    font-size: 2vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+:root {
+    --color-primary: #E7854B;
+    --color-secondary: #FF9857;
+    --color-tertiary: #291D16;
+}
+@media (max-width: 768px) {
+    body, html {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 8vw;
+        width: auto;
+    }
+
+    a, .header__ancora {
+        font-size: 3vw;
+    }
+
+    #btn-conhecer, #btn-download {
+        font-size: 2vw;
+    }
+}
