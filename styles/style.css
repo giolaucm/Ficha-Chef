@@ -54,9 +54,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 70vh;
     width: 100%;
-    margin-bottom: 200px; /* Ajuste a quantidade de margem inferior conforme necessário */
+    margin-bottom: 65px;
 }
 
 
@@ -85,7 +85,7 @@ strong {
 #section__apresentacao__btn-espaco {
     margin: 20px;
 }
-#btn-conhecer {
+.btn-conhecer {
     background-color: var(--color-secondary);
     color: white;
     border: none;
@@ -99,7 +99,7 @@ strong {
 
 }
 
-#btn-conhecer:hover {
+.btn-conhecer:hover {
     background-color: var(--color-primary);
 }
 
@@ -123,7 +123,7 @@ strong {
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    height: 85vh;
+    height: 90vh;
     width: 100%;
 
 }
@@ -160,6 +160,8 @@ strong {
     font-family: 'Inter', sans-serif;
     font-weight: 200;
     width: 500px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 
 }
 
@@ -230,8 +232,6 @@ strong {
     width: 25%;
 }
 
-
-/* Mudar a cor do botão ativo para branco */
 .nav-link.active {
     background-color: white !important;
     color: var(--color-primary) !important; /* Alterar a cor do texto para branco */
@@ -239,6 +239,8 @@ strong {
 
 .nav-link {
     color: white !important;
+    margin: 0 auto;
+
     
 }
 
@@ -264,28 +266,56 @@ strong {
 
 
 video {
-    width: 150vh;
-    height: 80vh;
+    width: 102vh;
+    height: 70vh;
     object-fit: cover;
     border-radius: 20px;
+    margin-top:20px;
     
 }
 
 #section__video {
     background-color: white;
-    height: 125vh; /* Ajustado para ocupar a altura total da tela */
+    height: 110vh; /* Ajustado para ocupar a altura total da tela */
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+
 
 }
 
+.video__titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-saiba {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 12.5px 30px;
+    font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
 #section__video__texto {
-    margin: 20px;
-    text-align: center; /* Added to center the text horizontally */
+    flex-direction: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__video__itens {
+    width:90%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 footer {
@@ -305,11 +335,19 @@ footer {
 }
 
 #section__equipe {
-    background-color: white;
-    height: 180vh; /* Ajustado para ocupar a altura total da tela */
-    width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.section__equipe__itens {
+    height: 100%;
+    width: 90%;
+    margin:100px;
 }
 :root {
     --color-primary: #E7854B;
