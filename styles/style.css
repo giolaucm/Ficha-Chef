@@ -165,22 +165,6 @@ strong {
 
 }
 
-.texto-centralizado {
-    color: black;
-    font-size: 1.5vw;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    width: 500px;
-    text-align: center;
-}
-.descricao__funcionalidade {
-    color: black;
-    font-size: 1vw;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    width: 200px;
-    margin: 0;
-}
 
 .descricao-branco {
     color: white;
@@ -220,14 +204,6 @@ strong {
     height: 100%;
 }
 
-
-#section__funcionalidades__cards {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    
-}
-
 #section__funcionalidade__celular{
     width: 25%;
 }
@@ -250,20 +226,6 @@ strong {
 }
 
 /*VÍDEO*/
-
-.card {
-    width: 180px;
-    height: 200px;
-    margin: 10px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: white; /* Alterado para branco */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado efeito de elevação */
-}
-
 
 video {
     width: 102vh;
@@ -318,12 +280,83 @@ video {
     justify-content: space-between;
 }
 
+/*EQUIPE*/
+#section__equipe {
+    background-color: white;
+    height: 150vh; /* Ajustado para ocupar a altura total da tela */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-centralizado {
+    text-align: center;
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    width: 700px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+.card {
+    width: 280px;
+    height: 340px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section__equipe__itens {
+    width:90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descricao__equipe{
+    color: black;
+    font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    width: 200px;
+    margin: 0;
+}
+
+#equipe__centralizado {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.section__equipe__cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section__equipe_imagem {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+
+
 footer {
     background-color: var(--color-tertiary);
     height: 300px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    
 }
 
 .titulo {
@@ -349,6 +382,8 @@ footer {
     width: 90%;
     margin:100px;
 }
+
+
 :root {
     --color-primary: #E7854B;
     --color-secondary: #FF9857;
