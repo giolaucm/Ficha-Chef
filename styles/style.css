@@ -125,8 +125,8 @@ strong {
 .section__conteudo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     background-color: white;
     height: 100%;
     width: 100%;
@@ -138,13 +138,14 @@ strong {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin:70px;
 }
 
 .section__conteudo__aplicativo {
-    margin: 0 0 0 0;
+    margin: 20px 0;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -188,6 +189,14 @@ strong {
 
 .section__conteudo__imagem {
     border-radius: 20px;
+}
+
+#section__conteudo__imagem__direita {
+    margin-left: 100px;
+}
+
+#section__conteudo__imagem__esquerda {
+    margin-right: 100px;
 }
 
 /*FUNCIONALIDADES*/
