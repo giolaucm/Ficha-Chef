@@ -4,6 +4,8 @@
 :root {
   --primary-color: #E8854A;
   --secondary-color: #000;
+  --tertiary-color: #24170E;
+  --quaternary-color: #BF9D77;
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Cormorant Garamond', sans-serif;
 }
@@ -76,6 +78,28 @@ body {
     margin: 8px;
     transition: 0.3s;
   }
+
+  .titulo {
+    font-size:2.5em;
+    font-family: var(--font-primary);
+    font-weight: 500;
+  }
+
+  .subtitulo {
+    font-family: var(--font-primary);
+    font-size: 1.2em;
+    width: 500px;
+    margin-top: 25px;
+    margin-left: 15%;
+
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   
   /*Quando a tela diminuir*/
   @media (max-width: 999px) { 
@@ -90,6 +114,7 @@ body {
       flex-direction: row;
       width: 100%;
     }
+    
     .nav-list  {
       position: absolute;
       top: 8vh;
@@ -141,3 +166,4 @@ body {
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+

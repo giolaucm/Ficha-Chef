@@ -8,7 +8,6 @@ section {
 
 #section__inicio {
     display: flex;
-    align-items: center;
 }
 
 .btn-download {
@@ -70,14 +69,122 @@ h4 {
     background-color: var(--primary-color);
 }
 
-.inicio__introducao {
+.line {
+    width: 7px;
+    height: 100px;
+    background-color: var(--primary-color);
+}
+
+#informacao1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left:19%;
 }
 
-/*APRESENTAÇÃO*/
+.informacao2 {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.sobre__quadro {
+    display: flex;
+    margin-left:12%;
+}
+.quadro__topico {
+    width: 270px;
+    height: 400px;
+    background-color: var(--primary-color);
+    justify-content: flex-end;
+}
 
-#section__apresentacao {
+.quadro {
+    width: 280px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.quadro__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#quadro1 {
+    background-image: url(../img/photo-time.png);
+    background-size: cover;
+}
+
+#quadro2 {
+    background-image: url(../img/photo-contato.png);
+    background-size: cover;
+}
+
+.quadro__titulo {
+    font-size: 2em;
+    color: #fff;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.quadro__subtitulo {
+    font-size: 1em;
+    color: #fff;
+    font-family: var(--font-primary);
+    font-weight: 300;
+    margin-top: 10px;
+
+}
+
+.quadro__saibamais {
+    display: flex;
+    justify-content: flex-end; /* Para alinhar o botão no final */
+    margin-top: 20px;
+}
+
+.quadro__botao {
+    width: 100px;
+    height: 50px; /* Altura do botão igual à altura do contêiner */
+    background-color: var(--primary-color);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro__division {
+    margin: 25px;
+}
+
+#section__sobre {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#section__aplicativo {
+    background-color: var(--tertiary-color);
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#aplicativo__quadro{
+    width:560px;
+    display: flex;
+    justify-content: center;
+}
+
+#aplicativo__celular {
+    width: 300px;
 }
