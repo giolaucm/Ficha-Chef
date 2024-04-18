@@ -23,6 +23,13 @@ section {
 
 }
 
+.apresentacao__coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+}
+
 #btn-download__img {
     width: 40%; /* Alterado */
     height: auto; /* Alterado */
@@ -182,9 +189,8 @@ h4 {
 #aplicativo__quadro{
     width:560px;
     display: flex;
-    justify-content: center;
 }
 
 #aplicativo__celular {
-    width: 300px;
+    width: 320px;
 }
