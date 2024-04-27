@@ -4,7 +4,7 @@
 :root {
   --primary-color: #E8854A;
   --secondary-color: #000;
-  --tertiary-color: #24170E;
+  --tertinary-color: #24170E;
   --quaternary-color: #BF9D77;
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Cormorant Garamond', sans-serif;
@@ -41,7 +41,6 @@ body {
     padding: 10px;
     display: flex;
     font-size: 1em;
-    justify-content: space-between;
     align-items: center;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
@@ -55,7 +54,6 @@ body {
   }
   
   .nav-list {
-    margin-left: 100px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -63,7 +61,7 @@ body {
   
   .nav-list li {
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin-left: 70px;
   }
   
   .mobile-menu {
@@ -137,9 +135,14 @@ body {
     .mobile-menu {
       display: block;
     }
-
-
+    .informacao2 {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: center;
   }
+  }
+  
+
+
   
   .nav-list.active {
     transform: translateX(0);

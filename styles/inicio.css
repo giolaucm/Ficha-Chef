@@ -3,7 +3,7 @@
 
 section {
     width: 100%;
-    height: 80vh;
+    height: 80%;
 }
 
 #section__inicio {
@@ -14,7 +14,6 @@ section {
     background-color: white;
     height: 45px;
     width: 45px;
-    margin-left: 60vh; /*modificar para se ajustar na resposividade*/
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -37,9 +36,10 @@ section {
 
 .header__menu {
    display: flex;
+   justify-content: space-between;
    margin-left: 50px;
    margin-right:50px;
-   width: 100vh;
+   width: 100%;
 }
 
 .header__personalizado  {
@@ -91,7 +91,7 @@ h4 {
 
 .informacao2 {
     margin-top: 50px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,22 +99,22 @@ h4 {
 }
 .sobre__quadro {
     display: flex;
-    margin-left:12%;
 }
 .quadro__topico {
     width: 270px;
     height: 400px;
     background-color: var(--primary-color);
-    justify-content: flex-end;
 }
 
 .quadro {
-    width: 280px;
-    height: 400px;
+    width: 80%; /* ou outra porcentagem que se adapte melhor à sua interface */
+    max-width: 280px; /* Define uma largura máxima para garantir que não ultrapasse 280px */
+    height: 60vh; /* 60% da altura do viewport */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+
 
 .quadro__icon {
     width: 40px;
@@ -173,13 +173,13 @@ h4 {
 
 #section__sobre {
     display: flex;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
 #section__aplicativo {
-    background-color: var(--tertiary-color);
+    background-color: var(--tertinary-color);
     display: flex;
     height: 90vh;
     justify-content: center;
@@ -187,10 +187,11 @@ h4 {
 }
 
 #aplicativo__quadro{
-    width:560px;
+    width:40%;
     display: flex;
+    justify-content: center;
 }
 
 #aplicativo__celular {
-    width: 320px;
+    width: 50%;
 }

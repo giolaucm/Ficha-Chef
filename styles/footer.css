@@ -1,4 +1,51 @@
+@import url(style.css);
+@import url(inicio.css);
+
 footer {
     background-color: var(--quaternary-color);
     height: 50vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.icons i {
+    font-size: 24px;
+    color: var(--tertinary-color);
+    margin-right: 15px;
+}
+
+.column__footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+}
+
+.nav__footer {
+    color: var(--tertinary-color);
+    font-family: var(--font-primary);
+
+}
+
+.itens__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right:50px;
+    height: 40%;
+    width: 50%;
+
+}
+
+.footer__decoration {
+    display: flex;
+    margin-top: 20px;
+}
+
+.font {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--tertinary-color);
 }
