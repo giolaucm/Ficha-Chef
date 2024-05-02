@@ -1,7 +1,7 @@
 @import url(style.css);
 
 
-#section__inicio {
+.section__inicio {
     display: flex;
     height: 100%;
     align-items: center;
@@ -25,7 +25,7 @@
     width: 50%;
 }
 
-#btn-download__img {
+.btn-download__img {
     width: 40%; /* Alterado */
     height: auto; /* Alterado */
 }
@@ -67,7 +67,7 @@ h4 {
 }
 
 
-#line__inicio {
+.line__inicio {
     width: 1%; /* Largura mínima */
     height: 100%;
     background-color: var(--primary-color);
@@ -79,7 +79,7 @@ h4 {
     background-color: var(--primary-color);
 }
 
-#informacao1 {
+.informacao1 {
     display: flex;
     margin-left: 20%;
     height: 30%;

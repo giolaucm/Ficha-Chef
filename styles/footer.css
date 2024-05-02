@@ -47,5 +47,6 @@ footer {
 .font {
     font-family: var(--font-primary);
     font-weight: 500;
+    font-size: 1.1em;
     color: var(--tertinary-color);
 }
