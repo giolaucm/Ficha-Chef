@@ -1,0 +1,20 @@
+#section__contato {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+.form-control {
+    width: 400px;
+    height: 45px;
+}
