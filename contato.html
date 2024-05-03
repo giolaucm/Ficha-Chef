@@ -1,103 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre em contato conosco</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FichaChef.</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mobile-navbar.css">
     <link rel="stylesheet" href="styles/inicio.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/contato.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+  </head>
+
+  <body>
     
-</head>
-<body>
     <header>
-        <nav>
-            <div class="header__menu">
-              <a class="logo" href="/">FichaChef.</a>
-              <ul class="nav-list">
+      <nav>
+          <div class="header__menu">
+            <a class="logo" href="/">FichaChef.</a>
+            <ul class="nav-list">
                     <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="#">APLICATIVO</a></li>
-                    <li><a href="#">EQUIPE</a></li>
-                    <li><a href="#">CONTATO</a></li>
-                  <li><a class="btn-download" href="#"><img class="btn-download__img" src="img/icon-download.svg"></a></li>
-              </ul>
-            </div>
+                  <li><a href="#">EQUIPE</a></li>
+                  <li><a href="contato.html">CONTATO</a></li>
+                <li><a class="btn-download" href="#"><img class="btn-download__img" src="img/icon-download.svg"></a></li>
+            </ul>
           </div>
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-            
-        </nav>
-      </header>
+        </div>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+          
+      </nav>
+    </header>
     <main>
-        <section class="section__inicio">
-          <div class="informacao1">
-            <div class="line__inicio"></div>
-            <article class="inicio__coluna">
-              <h1>Entre em contato conosco.</h1>
-              <h4>TIRE SUAS DÚVIDAS!</h4>
-            </article>
-          </div>
-        </section>
+      <section class="section__inicio">
+        <div class="informacao1">
+          <div class="line__inicio"></div>
+          <article class="inicio__coluna">
+            <h1>Entre em contato conosco.</h1>
+            <h4>TIRE SUAS DÚVIDAS!</h4>
+          </article>
+        </div>
+      </section>
 
-        <section id="section__sobre">
-          <div class="informacao2">
+      <section id="section__formulario">
+        <div class="informacao2" >
             <article class="apresentacao__coluna">
-              <div class="row">
+                <div class="row">
                 <div class="line"></div>
-                <p class="titulo">Agilize o seu negócio rapidamente.</h1>
-              </div>
-              <p class="subtitulo">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</h4>
+                <p class="titulo">Possui alguma dúvida ou sugestão?</h1>
+                </div>
+                <p class="subtitulo">Nos envie uma mensagem!</h4>
             </article>
-            <div class="formulario">
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label" _msttexthash="441363" _msthash="181">Nome</label>
-                  <input type="text" class="form-control" id="exampleFormControlInputName" placeholder="Seu nome" _mstplaceholder="299455" _msthash="182">
+            
+            <div id="section__formulario">
+              <div class="formulario">
+                  <input type="text" id="nome" name="nome" placeholder="Nome">
+                  <input type="email" id="email" name="email" placeholder="E-mail">
+                  <input type="text" id="assunto" name="assunto" placeholder="Assunto da Pergunta">
+                  <textarea id="pergunta" name="pergunta" placeholder="Pergunta"></textarea>
+                  <button type="submit">Enviar</button> <!-- Botão de envio -->
               </div>
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label" _msttexthash="441363" _msthash="181">E-mail</label>
-                  <input type="email" class="form-control" id="exampleFormControlInputEmail" placeholder="name@example.com" _mstplaceholder="299455" _msthash="182">
-              </div>
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label" _msttexthash="441363" _msthash="181">Assunto da pergunta</label>
-                  <input type="text" class="form-control" id="exampleFormControlInputSubject" placeholder="Assunto da pergunta" _mstplaceholder="299455" _msthash="182">
-              </div>
-              <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label" _msttexthash="483457" _msthash="183">Pergunta</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 127px;"></textarea>
-              </div>
+          </div>
+ 
+        </div>
+      </section>
+
+      <footer>
+        <div class="itens__footer">
+          <div class="column__footer">
+            <a class="logo" href="/" style="color:#24170E">F.</a>
+            <div class="icons">
+              <i class="fi fi-brands-instagram"></i>
+                <i class="fi fi-brands-github"></i>
             </div>
           </div>
-        </section>
-        <footer>
-          <div class="itens__footer">
-            <div class="column__footer">
-              <a class="logo" href="/" style="color:#24170E">F.</a>
-              <div class="icons">
-                <i class="fi fi-brands-instagram"></i>
-                  <i class="fi fi-brands-github"></i>
-              </div>
-            </div>
-  
-            <div class="column__footer">
-              <a class="font" href="#">SOBRE</a>
-              <a class="font" href="#">APLICATIVO</a>
-              <a class="font" href="#">EQUIPE</a>
-              <a class="font" href="#">CONTATO</a>
-            </div>
+
+          <div class="column__footer">
+            <a class="font" href="#">SOBRE</a>
+            <a class="font" href="#">APLICATIVO</a>
+            <a class="font" href="#">EQUIPE</a>
+            <a class="font" href="#">CONTATO</a>
           </div>
-          <div class="footer__decoration">
-            <img src="img/decoration-footer.svg">
-          </div>
-        </footer>
+        </div>
+        <div class="footer__decoration">
+          <img src="img/decoration-footer.svg">
+        </div>
+      </footer>
     </main>
-</body>n b 
+    <script src="mobile-navbar.js"></script>
+</body>
 </html>

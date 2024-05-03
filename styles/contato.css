@@ -1,20 +1,52 @@
-#section__contato {
+#section__formulario {
+    height: 100%;
     display: flex;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 50%;
+    width: 100%; /* Largura fixa para o formulário */
+    max-width: 400px; /* Largura máxima para evitar distorções em telas muito largas */
+    margin: 0 auto;
 }
 
-.form-control {
-    width: 400px;
-    height: 45px;
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%; /* Preenchimento total da largura do contêiner */
+    padding: 10px; /* Padding fixo para todos os campos */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    height: 150px; /* Altura fixa para a caixa de texto */
+    resize: none; /* Desabilita a redimensionamento vertical */
+}
+
+.formulario button[type="submit"] {
+    width: 30%; /* Botão ocupa toda a largura do contêiner */
+    padding: 10px; /* Padding fixo para o botão */
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+/* Estilização do botão ao passar o mouse */
+.formulario button[type="submit"]:hover {
+    background-color: #007acc;
+}
+
+/* Centralizando o botão */
+.formulario button[type="submit"] {
+    display: block;
+    margin: 0 auto;
 }
