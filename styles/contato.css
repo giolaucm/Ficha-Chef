@@ -1,52 +1,93 @@
+@import url(style.css);
+
 #section__formulario {
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .formulario {
-    width: 100%; /* Largura fixa para o formulário */
-    max-width: 400px; /* Largura máxima para evitar distorções em telas muito largas */
-    margin: 0 auto;
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario textarea {
-    width: 100%; /* Preenchimento total da largura do contêiner */
-    padding: 10px; /* Padding fixo para todos os campos */
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    font-size: 16px;
+textarea {
+  overflow: auto;
+  width: 800px;
+  resize: vertical;
 }
 
-.formulario textarea {
-    height: 150px; /* Altura fixa para a caixa de texto */
-    resize: none; /* Desabilita a redimensionamento vertical */
+#column_duvida {
+    display: flex;
+    flex-direction: column;
 }
 
-.formulario button[type="submit"] {
-    width: 30%; /* Botão ocupa toda a largura do contêiner */
-    padding: 10px; /* Padding fixo para o botão */
-    background-color: dodgerblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
+.box {
+    width: 100%;
 }
 
-/* Estilização do botão ao passar o mouse */
-.formulario button[type="submit"]:hover {
-    background-color: #007acc;
+.informacao3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-/* Centralizando o botão */
-.formulario button[type="submit"] {
+label {
     display: block;
-    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #999;
+    transition: all 0.3s ease;
+    font-family: var(--font-primary);
+
+}
+
+.label-focus {
+  color: var(--primary-color); /* Mude isso para a cor que desejar */
+}
+
+.campo-texto {
+  font-family: var(--font-primary);
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#pergunta {
+    height: 100px;
+    width: 800px;
+}
+
+#send {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-family: var(--font-primary);
+    color: white;
+    border: none; /* Removendo a borda */
+}
+
+.campo-texto:focus {
+    background-color: #ffd4bb21;
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.campo-texto:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }

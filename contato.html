@@ -48,25 +48,41 @@
       </section>
 
       <section id="section__formulario">
-        <div class="informacao2" >
-            <article class="apresentacao__coluna">
-                <div class="row">
-                <div class="line"></div>
-                <p class="titulo">Possui alguma dúvida ou sugestão?</h1>
-                </div>
+        <div class="informacao3">
+          <article class="apresentacao__coluna">
+              <div class="row">
+              <div class="line" style="height: 100px;"></div>
+              <article id="column_duvida">
+                <p class="titulo" style="width: 100%;">Possui alguma dúvida ou sugestão?</h1>
                 <p class="subtitulo">Nos envie uma mensagem!</h4>
+              </article>
+              </div>
+          </article>
+            
+          <div class="formulario">
+            <article class="box">
+              <label for="nome">NOME</label>
+              <input type="text" id="nome" name="nome" class="campo-texto">
             </article>
             
-            <div id="section__formulario">
-              <div class="formulario">
-                  <input type="text" id="nome" name="nome" placeholder="Nome">
-                  <input type="email" id="email" name="email" placeholder="E-mail">
-                  <input type="text" id="assunto" name="assunto" placeholder="Assunto da Pergunta">
-                  <textarea id="pergunta" name="pergunta" placeholder="Pergunta"></textarea>
-                  <button type="submit">Enviar</button> <!-- Botão de envio -->
-              </div>
+      
+          <article class="box">
+            <label for="email">E-MAIL</label>
+            <input type="email" id="email" name="email" class="campo-texto">
+          </article>
+      
+          <article class="box">
+            <label for="assunto">ASSUNTO</label>
+            <input type="text" id="assunto" name="assunto" class="campo-texto">
+          </article>
+            
+          <article class="box">
+            <label for="pergunta">PERGUNTA</label>
+            <textarea type="text" id="pergunta" name="pergunta" class="campo-texto"></textarea>
+          </article>
+      
+            <button id="send" type="submit">ENVIAR</button>
           </div>
- 
         </div>
       </section>
 
@@ -93,5 +109,6 @@
       </footer>
     </main>
     <script src="mobile-navbar.js"></script>
+    <script src="label.js"></script>
 </body>
 </html>
