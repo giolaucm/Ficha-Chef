@@ -1,0 +1,64 @@
+@import url(style.css);
+
+#section__equipe {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-perfil{
+    width: 250px;
+    height: 100%;
+    margin: 80px;
+
+}
+
+.membro {
+    font-family: var(--font-primary);
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.funcao {
+    font-family: var(--font-primary);
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+.perfil {
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.informacao4 {
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-equipe {
+    width: 100px;
+    height: 3px;
+    margin-bottom: 30px;
+    background-color: var(--primary-color);
+}
+
+.paragrafo {
+display: flex;
+flex-direction: column;
+align-items: center;
+}

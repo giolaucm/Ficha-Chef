@@ -26,6 +26,7 @@ textarea {
 #column_duvida {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .box {
@@ -57,7 +58,7 @@ label {
 
 .campo-texto {
   font-family: var(--font-primary);
-    width: 800px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     height: 25px;
@@ -69,7 +70,7 @@ label {
 
 #pergunta {
     height: 100px;
-    width: 800px;
+    width: 100%;
 }
 
 #send {

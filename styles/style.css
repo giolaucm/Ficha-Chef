@@ -154,6 +154,8 @@ body {
 
   #informacao3 {
     flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
   }
   
 
