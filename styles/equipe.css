@@ -11,20 +11,23 @@
     width: 250px;
     height: 100%;
     margin: 80px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .membro {
     font-family: var(--font-primary);
     font-size: 2em;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .funcao {
     font-family: var(--font-primary);
     font-size: 1em;
     font-weight: 400;
-
+    margin-bottom: 10px;
 }
 
 .perfil {
@@ -53,7 +56,7 @@
 .line-equipe {
     width: 100px;
     height: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-color: var(--primary-color);
 }
 
@@ -61,4 +64,26 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+}
+
+.legenda {
+    margin-top: 20px;
+}
+
+.titulo_equipe {
+    font-family: var(--font-primary);
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.subtitulo_equipe {
+    font-family: var(--font-primary);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.custom-linkedin-icon {
+    color: var(--primary-color);
+    font-size: 24px; /* Tamanho do ícone */
 }
