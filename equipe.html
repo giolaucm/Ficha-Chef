@@ -7,7 +7,7 @@
     <title>FichaChef.</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mobile-navbar.css">
-    <link rel="stylesheet" href="styles/inicio.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/equipe.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
@@ -45,7 +45,7 @@
               </article>
             </div>
           </section>
-          <section id="section__equipe">
+          <section class="section__equipe">
             <div class="informacao4">
               <div class="paragrafo">
                 <div class="line-equipe"></div>
@@ -109,6 +109,52 @@
                     </div>
                 </div>
           </section>
+
+          <!--Retrospectiva-->
+          <section class="section__equipe">
+            <div class="informacao4">
+              <div class="paragrafo">
+                <div class="line-equipe"></div>
+                <h2 class="titulo_equipe" style="display: flex; align-items: center;">RETROSPECTIVA</h2>
+                <p class="subtitulo_equipe">Linha do Tempo do desenvolvimento</p>
+              </div>
+              <div class="content">
+                <div class="slides">
+                  <input class="input_slider" type="radio" name="slide" id="slide1" checked>
+                  <input class="input_slider" type="radio" name="slide" id="slide2">
+                  <input class="input_slider" type="radio" name="slide" id="slide3">
+                  <input class="input_slider" type="radio" name="slide" id="slide4">
+                  <input class="input_slider" type="radio" name="slide" id="slide5">
+
+                  <div class="slide s1">
+                    <img src="img/finaldoprimeiro.jpg" alt="">
+                  </div>
+
+                  <div class="slide">
+                    <img src="img/finaldosegundo.jpg" alt="">
+                  </div>
+
+                  <div class="slide">
+                    <img src="img/finalultimoano.jpg" alt="">
+                  </div>
+
+                  <div class="slide">
+                    <img src="img/desenvolvimento.jpg" alt="">
+                  </div>
+
+                  <div class="slide">
+                    <img src="img/eventocampusparty.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="navigation">
+                <label for="slide1" class="bar"></label>
+                <label for="slide2" class="bar"></label>
+                <label for="slide3" class="bar"></label>
+                <label for="slide4" class="bar"></label>
+                <label for="slide5" class="bar"></label>
+              </div>
+            </section>
         <footer>
             <div class="itens__footer">
               <div class="column__footer">
@@ -132,5 +178,6 @@
     </main>
     <script src="mobile-navbar.js"></script>
     <script src="label.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

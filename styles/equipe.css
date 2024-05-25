@@ -1,6 +1,6 @@
 @import url(style.css);
 
-#section__equipe {
+.section__equipe {
     height: auto;
     display: flex;
     align-items: center;
@@ -10,7 +10,8 @@
 .card-perfil{
     width: 250px;
     height: 100%;
-    margin: 80px;
+    margin-left: 80px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +52,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .line-equipe {
@@ -64,6 +66,7 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-bottom: 40px;
 }
 
 .legenda {
@@ -87,3 +90,4 @@ align-items: center;
     color: var(--primary-color);
     font-size: 24px; /* Tamanho do ícone */
 }
+
