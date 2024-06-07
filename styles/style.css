@@ -192,6 +192,11 @@ body {
   width: 100%;
 }
 
+.coluna {
+  margin-left: 0;
+  flex-direction: column;
+}
+
   }
   
 
