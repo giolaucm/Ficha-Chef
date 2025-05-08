@@ -15,3 +15,6 @@ Projeto desenvolvido para o meu TCC em 2023, com sua criação temos como objeti
   - Parte que engaje os usuários
 </details>
 
+_______________
+
+Parte 2: Desenvolvimento em Java da Ficha Técnicas para POO
